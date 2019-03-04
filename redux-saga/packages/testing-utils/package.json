@@ -1,0 +1,56 @@
+{
+  "name": "@redux-saga/testing-utils",
+  "version": "1.0.2",
+  "description": "Redux-saga simple testing utils.",
+  "main": "./dist/redux-saga-testing-utils.cjs.js",
+  "module": "./dist/redux-saga-testing-utils.esm.js",
+  "typings": "./index.d.ts",
+  "files": [
+    "dist",
+    "*.d.ts"
+  ],
+  "scripts": {
+    "test": "jest",
+    "clean": "rimraf dist",
+    "prebuild": "npm run clean",
+    "build": "rollup -c",
+    "prepare": "npm run build",
+    "preversion": "npm test"
+  },
+  "repository": "https://github.com/redux-saga/redux-saga/tree/master/packages/testing-utils",
+  "keywords": [
+    "redux",
+    "saga",
+    "redux-saga"
+  ],
+  "author": "Yassine ELOUAFI <yelouafi@gmail.com>",
+  "contributors": [
+    "Mateusz Burzyński <mateuszburzynski@gmail.com> (https://github.com/Andarist)",
+    "Mikhail Shustov <restrry@gmail.com> (https://github.com/restrry)",
+    "Shi Feichao <842351815@qq.com> (https://github.com/shinima)"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/redux-saga/redux-saga/issues"
+  },
+  "homepage": "https://redux-saga.js.org/",
+  "dependencies": {
+    "@redux-saga/symbols": "^1.0.1",
+    "@redux-saga/types": "^1.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "babel-7-jest": "^21.3.3",
+    "babel-plugin-annotate-pure-calls": "^0.4.0",
+    "jest": "^23.5.0",
+    "lerna-alias": "^3.0.2",
+    "redux-saga": "^1.0.2",
+    "rimraf": "^2.4.3",
+    "rollup": "^1.0.2",
+    "rollup-plugin-babel": "5.0.0-alpha.0",
+    "typescript": "^3.2.1",
+    "typings-tester": "^0.2.2"
+  }
+}
